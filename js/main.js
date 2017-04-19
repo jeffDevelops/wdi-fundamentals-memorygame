@@ -1,4 +1,25 @@
-var cards = ["queen", "queen", "king", "king"];
+var cards = [
+	{
+		rank: "queen",
+		suit: "hearts",
+		cardImage: "images/queen-of-hearts.png"
+	},
+	{
+		rank: "queen",
+		suit: "diamonds",
+		cardImage: "images/queen-of-diamonds.png"
+	},
+	{
+		rank: "king",
+		suit: "hearts",
+		cardImage: "images/king-of-hearts.png"
+	},
+	{
+		rank: "king",
+		suit: "diamonds",
+		cardImage: "images/king-of-diamonds.png"
+	}
+];
 var cardsInPlay = [];
 
 var checkForMatch = function() { //Once there are two cards in the cardsInPlay array, we can see whether they're the same suit
@@ -12,8 +33,10 @@ var checkForMatch = function() { //Once there are two cards in the cardsInPlay a
 }
 
 var flipCard = function(cardId) { //Simulates flipping one card by storing the chosen card into the cardsInPlay array
-	console.log("User flipped a " + cards[cardId] + " card.");
-	cardsInPlay.push(cards[cardId]);
+	console.log("User flipped a " + cards[cardId].rank + " card.");
+	cardsInPlay.push(cards[cardId].rank);
+	console.log(cards[cardId].cardImage);
+	console.log("of " + cards[cardId].suit);
 	checkForMatch();
 }
 
