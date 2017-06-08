@@ -1,0 +1,28 @@
+Stories
+
+	Structure: Navigation links should work as in a single-page application to alternate between instructions and the game
+
+	UX: Start New Game button on Instructions "page"
+
+	Functionality: User can flip more than two cards at once :(
+
+	Functionality: "flip card back" method 
+
+	Functionality: Winning the game
+
+	Functionality: Reset method
+
+	Functionality: 
+		Different Modes:
+			Easy: 8 cards
+			Medium: 16 cards
+			Hard: 32 cards
+
+To-Do
+
+In-Progress
+
+Testing
+
+
+
